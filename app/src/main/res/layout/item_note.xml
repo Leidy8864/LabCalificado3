@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Título de la nota"/>
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/date_text"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/title_text"
+            android:layout_alignTop="@+id/title_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:relative_time_prefix="Creado "
+            tools:text="18/10/2018" />
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            tools:text="Contenido de la nota ..."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="81dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/favorite_star"
+                style="?android:attr/starStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="@string/favorite"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/archivar_click"
+                style="?android:attr/starStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="@string/archive"/>
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_delete"
+                android:tint="#880e4f"
+                android:background="@null"
+                android:contentDescription="@string/borrar"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

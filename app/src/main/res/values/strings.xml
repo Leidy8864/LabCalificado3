@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LabCalificado3</string>
+    <string name="register_username">Nombre de usuario</string>
+    <string name="register_name">Nombre completo</string>
+    <string name="register_email">Correo electronico</string>
+    <string name="register_password">Contraseña</string>
+    <string name="register_save">Registrar</string>
+    <string name="LogIn">Iniciar Sesion</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="name_user">Nombre de usuario</string>
+    <string name="name">Nombre completo</string>
+    <string name="favorite">Favorito</string>
+    <string name="archive">Archivar</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="note">Note</string>
+    <string name="atras">Atras</string>
+    <string name="correo">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="crear">CREAR</string>
+    <string name="borrar">Borrar</string>
+    <string name="question">¿Seguro que desea salir?</string>
+    <string name="ok">OK</string>
+    <string name="cancelar">Cancelar</string>
+</resources>
